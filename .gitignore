@@ -2,3 +2,6 @@
 .idea
 /ideas
 .venv
+__pycache__/
+polars_stats.egg-info/
+.idea/
