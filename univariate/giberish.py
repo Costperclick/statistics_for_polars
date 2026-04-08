@@ -1,9 +1,8 @@
-count = {
-    1:4,
-    2:1,
-    3:1,
-    4:1
-}
+import random
 
-x = [k for k,v in count.items() if v == max(count.values())]
-print(x)
+
+n = [4, 2, 6, 9, 10, 21]
+
+for i in range(100):
+    rand= random.choices(n, k=len(n))
+    print(rand)
