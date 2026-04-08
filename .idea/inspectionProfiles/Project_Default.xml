@@ -1,0 +1,107 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredPackages">
+        <list>
+          <option value="numpy" />
+          <option value="pandas" />
+          <option value="python-dateutil" />
+          <option value="pytz" />
+          <option value="six" />
+          <option value="tzdata" />
+          <option value="annotated-types" />
+          <option value="mypy_extensions" />
+          <option value="packaging" />
+          <option value="pandera" />
+          <option value="pydantic" />
+          <option value="pydantic_core" />
+          <option value="typeguard" />
+          <option value="typing-inspect" />
+          <option value="typing-inspection" />
+          <option value="adbc-driver-manager" />
+          <option value="adbc-driver-sqlite" />
+          <option value="altair" />
+          <option value="arro3-core" />
+          <option value="attrs" />
+          <option value="babel" />
+          <option value="bcrypt" />
+          <option value="cachetools" />
+          <option value="certifi" />
+          <option value="cffi" />
+          <option value="charset-normalizer" />
+          <option value="click" />
+          <option value="cloudpickle" />
+          <option value="commonmark" />
+          <option value="connectorx" />
+          <option value="contourpy" />
+          <option value="cryptography" />
+          <option value="cycler" />
+          <option value="deltalake" />
+          <option value="Deprecated" />
+          <option value="dotenv" />
+          <option value="et_xmlfile" />
+          <option value="faicons" />
+          <option value="fastexcel" />
+          <option value="fonttools" />
+          <option value="fsspec" />
+          <option value="gevent" />
+          <option value="great-tables" />
+          <option value="greenlet" />
+          <option value="htmltools" />
+          <option value="idna" />
+          <option value="importlib_metadata" />
+          <option value="importlib_resources" />
+          <option value="invoke" />
+          <option value="Jinja2" />
+          <option value="jsonschema" />
+          <option value="jsonschema-specifications" />
+          <option value="kiwisolver" />
+          <option value="markdown-it-py" />
+          <option value="MarkupSafe" />
+          <option value="matplotlib" />
+          <option value="mdurl" />
+          <option value="mmh3" />
+          <option value="narwhals" />
+          <option value="openpyxl" />
+          <option value="paramiko" />
+          <option value="pillow" />
+          <option value="polars" />
+          <option value="pyarrow" />
+          <option value="pycparser" />
+          <option value="Pygments" />
+          <option value="pyiceberg" />
+          <option value="PyMySQL" />
+          <option value="PyNaCl" />
+          <option value="pyparsing" />
+          <option value="pyroaring" />
+          <option value="python-dotenv" />
+          <option value="referencing" />
+          <option value="requests" />
+          <option value="rich" />
+          <option value="rpds-py" />
+          <option value="sortedcontainers" />
+          <option value="SQLAlchemy" />
+          <option value="sshtunnel" />
+          <option value="strictyaml" />
+          <option value="tenacity" />
+          <option value="typing_extensions" />
+          <option value="urllib3" />
+          <option value="wrapt" />
+          <option value="xlsx2csv" />
+          <option value="xlsxwriter" />
+          <option value="zipp" />
+          <option value="zope.event" />
+          <option value="zope.interface" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="pandas" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
