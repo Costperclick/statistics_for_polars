@@ -1,5 +1,5 @@
 import polars as pl
-from _utils import _require
+from polars_stats._utils import _require
 import warnings
 
 

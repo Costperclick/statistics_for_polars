@@ -1,6 +1,5 @@
 import polars as pl
-from _utils import _require
-
+from polars_stats._utils import _require
 
 def hotelling_t2(df: pl.DataFrame, features: list, group: str, detail: bool = False) -> float | dict:
     """

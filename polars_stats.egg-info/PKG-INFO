@@ -1,6 +1,28 @@
+Metadata-Version: 2.4
+Name: polars-stats
+Version: 0.1.0
+Summary: Statistical analysis toolkit for Polars — descriptive stats, hypothesis tests, regression, and more.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: polars>=0.20.0
+Provides-Extra: tests
+Requires-Dist: scipy>=1.11.0; extra == "tests"
+Requires-Dist: statsmodels>=0.14.0; extra == "tests"
+Provides-Extra: ml
+Requires-Dist: scikit-learn>=1.3.0; extra == "ml"
+Provides-Extra: posthoc
+Requires-Dist: scikit-posthocs>=0.9.0; extra == "posthoc"
+Provides-Extra: full
+Requires-Dist: scipy>=1.11.0; extra == "full"
+Requires-Dist: statsmodels>=0.14.0; extra == "full"
+Requires-Dist: scikit-learn>=1.3.0; extra == "full"
+Requires-Dist: scikit-posthocs>=0.9.0; extra == "full"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: polars-stats[full]; extra == "dev"
+
 # polars-stats
 
-!! -- STILL WORKING ON -- !!
 Statistical analysis toolkit for [Polars](https://pola.rs/). Input Polars, output clean results.
 
 ## Why ? 

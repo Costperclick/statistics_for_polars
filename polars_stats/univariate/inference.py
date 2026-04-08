@@ -1,6 +1,6 @@
 import polars as pl
 import random
-from _utils import _require
+from polars_stats._utils import _require
 
 
 def ci_mean_bootstrap(n: pl.Series, confidence: float = 0.95, iterations: int = 10000) -> dict:
