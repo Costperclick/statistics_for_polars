@@ -5,3 +5,4 @@
 __pycache__/
 polars_stats.egg-info/
 .idea/
+guide.md
