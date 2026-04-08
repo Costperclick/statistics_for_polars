@@ -1,0 +1,6 @@
+[project]
+dependencies = ["polars"]
+
+[project.optional-dependencies]
+tests = ["scipy"]
+full = ["scipy", "scikit-learn", "pingouin"]
