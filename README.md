@@ -56,6 +56,14 @@ mv.ols(target="revenue")
 mv.pca(n_components=2)
 ```
 
+The functions holds all the docstring for now, so they wont appear when using the class-based approach, So I recommand using the functions to explore your datas.
+If you need to see the docstring of the function (used as a method by the wrapper), please use : 
+
+```python
+help(foo.method_name)
+```
+
+
 ## Modules
 
 ### Univariate (single variable)
