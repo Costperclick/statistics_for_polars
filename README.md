@@ -13,13 +13,13 @@ The docs double as a stats refresher. Every function tells you when to use it, n
 
 ```bash
 # Base (descriptive stats only, no dependencies beyond Polars)
-pip install polars-stats
+pip install "polars-stats @ git+https://github.com/costperclick/statistics_for_polars.git"
 
 # With hypothesis tests and regression
-pip install "polars-stats[tests]"
+pip install "polars-stats[tests] @ git+https://github.com/costperclick/statistics_for_polars.git"
 
 # Everything
-pip install "polars-stats[full]"
+pip install "polars-stats[full] @ git+https://github.com/costperclick/statistics_for_polars.git"
 ```
 
 ## Quick start
@@ -80,7 +80,7 @@ mv.pca(n_components=2)
 
 **Total: 84 functions.**
 
-## Guides
+## Guides - French only so far
 
 - [Statistics Guide (Univariate)](STATISTICS_GUIDE.md) — Concepts, workflow, decision trees
 - [Multivariate Guide](MULTIVARIATE_GUIDE.md) — Correlation, comparison, regression, PCA
@@ -94,18 +94,18 @@ polars_stats/
 ├── wrappers.py                  # Univariate and Multivariate classes
 ├── univariate/
 │   ├── __init__.py
-│   ├── descriptive.py           # 18 functions
-│   ├── tests.py                 # 17 functions
-│   ├── distribution.py          #  3 functions
-│   └── inference.py             #  5 functions
+│   ├── descriptive.py           
+│   ├── tests.py                 
+│   ├── distribution.py          
+│   └── inference.py             
 └── multivariate/
     ├── __init__.py
-    ├── descriptive.py           #  5 functions
-    ├── comparison.py            # 18 functions
-    ├── correlation.py           #  7 functions
-    ├── regression.py            #  6 functions
-    ├── dimension.py             #  2 functions
-    └── tests.py                 #  3 functions
+    ├── descriptive.py          
+    ├── comparison.py            
+    ├── correlation.py
+    ├── regression.py
+    ├── dimension.py
+    └── tests.py
 ```
 
 ## Tests : 
