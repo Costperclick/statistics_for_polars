@@ -82,8 +82,8 @@ mv.pca(n_components=2)
 
 ## Guides - French only so far
 
-- [Statistics Guide (Univariate)](univarié_guide.md) — Concepts, workflow, decision trees
-- [Multivariate Guide](MULTIVARIATE_GUIDE.md) — Correlation, comparison, regression, PCA
+- [Statistics Guide (Univariate)](polars_stats/univariate/univarié_guide.md) — Concepts, workflow, decision trees
+- [Multivariate Guide](polars_stats/multivariate/multivarié_guide.md) — Correlation, comparison, regression, PCA
 
 ## Project structure
 
