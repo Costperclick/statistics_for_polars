@@ -313,3 +313,51 @@ class Multivariate:
 
     def box_m(self, features: list, group: str):
         return mv_tests.box_m(self._df, features, group)
+
+
+# Import docstrings in wrappers :
+_univariate_doc_sources = {
+    "mean": uv_desc, "median": uv_desc, "weighted_mean": uv_desc,
+    "geometric_mean": uv_desc, "harmonic_mean": uv_desc, "mode": uv_desc,
+    "variance": uv_desc, "standard_deviation": uv_desc,
+    "median_absolute_deviation": uv_desc, "skewness": uv_desc,
+    "kurtosis": uv_desc, "quantile": uv_desc, "iqr": uv_desc,
+    "data_range": uv_desc, "variance_coefficient": uv_desc,
+    "s_entropy": uv_desc, "gini": uv_desc,
+    "shapiro_wilk": uv_tests, "dagostino_pearson": uv_tests,
+    "kolmogorov_smirnov": uv_tests, "normality": uv_tests,
+    "ttest_1samp": uv_tests, "ztest_1samp": uv_tests,
+    "wilcoxon_1samp": uv_tests, "sign_test": uv_tests,
+    "binomial_test": uv_tests, "outliers_zscore": uv_tests,
+    "outliers_mad": uv_tests, "outliers_iqr": uv_tests,
+    "outliers_grubbs": uv_tests, "cohens_d": uv_tests,
+    "which_test": uv_tests,
+    "distribution_fit": uv_dist, "qqplot_data": uv_dist, "kde": uv_dist,
+    "ci_mean_bootstrap": uv_inf, "ci_median_bootstrap": uv_inf,
+    "ci_mean": uv_inf, "ci_variance": uv_inf,
+}
+
+for method_name, module in _univariate_doc_sources.items():
+    getattr(Univariate, method_name).__doc__ = getattr(module, method_name).__doc__
+
+_multivariate_doc_sources = {
+    "mean": mv_desc, "cross_summary": mv_desc, "correlation_matrix": mv_desc,
+    "covariance_matrix": mv_desc, "partial_correlation": mv_desc,
+    "ttest_ind": mv_comp, "ttest_paired": mv_comp, "welch_ttest": mv_comp,
+    "mann_whitney": mv_comp, "wilcoxon_paired": mv_comp,
+    "kolmogorov_smirnov_2samp": mv_comp, "levene": mv_comp, "bartlett": mv_comp,
+    "cohens_d_2samp": mv_comp, "rank_biserial": mv_comp,
+    "anova_oneway": mv_comp, "welch_anova": mv_comp, "kruskal_wallis": mv_comp,
+    "tukey_hsd": mv_comp, "dunn": mv_comp,
+    "eta_squared": mv_comp, "omega_squared": mv_comp,
+    "pearson": mv_corr, "spearman": mv_corr, "kendall": mv_corr,
+    "point_biserial": mv_corr, "chi2_independence": mv_corr,
+    "cramers_v": mv_corr, "mutual_information": mv_corr,
+    "ols": mv_reg, "logistic": mv_reg, "ridge": mv_reg, "lasso": mv_reg,
+    "vif": mv_reg, "residual_diagnostics": mv_reg,
+    "pca": mv_dim, "scree_data": mv_dim,
+    "hotelling_t2": mv_tests, "mahalanobis": mv_tests, "box_m": mv_tests,
+}
+
+for method_name, module in _multivariate_doc_sources.items():
+    getattr(Multivariate, method_name).__doc__ = getattr(module, method_name).__doc__
