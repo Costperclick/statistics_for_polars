@@ -1,7 +1,7 @@
 # polars-stats
 
 !! -- STILL WORKING ON -- !!
-Statistical analysis toolkit for [Polars](https://pola.rs/). Input Polars, output clean results.
+Statistical analysis toolkit for [Polars](https://pola.rs/). Input Polars objects, output clean results.
 
 ## Why ? 
 
